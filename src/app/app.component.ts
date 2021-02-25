@@ -12,8 +12,10 @@ export class AppComponent {
 
   mainChar = "Tony Stark";
 
+  shouldBeRed: boolean = true;
+
   movie ={
     movieName: 'Avangers 2',
     rating: 9
-  }
+  };
 }
