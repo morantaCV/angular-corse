@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+
+  listOfMovies = ["Avangers", "Ironman", "Spiderman"]
+
+  mainChar = "Tony Stark";
+
+  movie ={
+    movieName: 'Avangers 2',
+    rating: 9
+  }
 }
