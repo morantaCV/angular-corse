@@ -7,15 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample-app';
+  shouldDisplayMovie: boolean = true;
 
-  listOfMovies = ["Avangers", "Ironman", "Spiderman"]
-
-  mainChar = "Tony Stark";
-
-  shouldBeRed: boolean = true;
-
-  movie ={
-    movieName: 'Avangers 2',
-    rating: 9
-  };
+  togleMovieComponent(){
+    this.shouldDisplayMovie = !this.shouldDisplayMovie;
+  }
 }

@@ -1,14 +1,3 @@
-<h1>Hello world from {{ title }}</h1>
+<app-movies *ngIf="shouldDisplayMovie" [listOfMovies]= "['Ironman', 'Wonderwoman']" ></app-movies>
 
-<div class="direciives" *ngIf = "listOfMovies.length">
-  {{mainChar}}
-</div>
-
-<div 
-  class="list-of-movies"
-  [ngStyle]="{background: shouldBeRed ? 'red' : 'blue'}"
->
-  <div class="movie" *ngFor="let movie of listOfMovies"> {{ movie }}</div>
-</div>
-
-<button (click)="shouldBeRed = !shouldBeRed">Change</button>
+<button (click)="togleMovieComponent()">Toggle Movie Component</button>
